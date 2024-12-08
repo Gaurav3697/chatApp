@@ -6,12 +6,12 @@ import cookieParser from "cookie-parser";
 // Load environment variables from the .env file
 dotenv.config();  // Load dotenv before accessing environment variables
 
+const app = express();
+
 //route imports
 import authRoutes from "./routes/authRoute.js";
 import userRoutes from "./routes/userRoutes.js";
 import messageRoute from "./routes/messageRoutes.js";
-
-const app = express();
 
 // Use packages
 app.use(express.json());
